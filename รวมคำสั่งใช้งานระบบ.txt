@@ -1,0 +1,12 @@
+---- firebase ---
+npm run build
+firebase deploy 
+
+---เพิ่มเมนู ---
+cd C:\Users\tanap\noodle-order\firestore-import
+$env:FIREBASE_KEY = Get-Content "serviceAccountKey.json" -Raw
+node importMenu.js
+
+--- รันคำสั่งเพื่อให้เครื่องพิมทำงาน  ---
+ cd C:\Users\tanap\noodle-order\printer-server
+node firestore-printer-pdf.js
